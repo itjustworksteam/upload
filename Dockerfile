@@ -13,3 +13,5 @@ RUN apt-get update
 RUN apt-get install ncftp -y
 # install heroku
 RUN apt-get install heroku -y
+# install digital ocean
+RUN wget -qO- https://github.com/digitalocean/doctl/releases/download/v1.6.0/doctl-1.6.0-linux-amd64.tar.gz | tar xz ; mv ./doctl /usr/local/bin
